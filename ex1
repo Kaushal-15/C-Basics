@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+int main() {
+   float P, N, R, Simple, Compound;
+   printf("Enter the principal value amount:\n");
+   scanf("%f", &P);
+   printf("Enter the Rate of Interest:\n");
+   scanf("%f", &R); 
+   printf("Enter the time period in years:\n");
+   scanf("%f", &N); 
+   Simple = P * N * R / 100;
+   Compound = P * pow(1 + R / 100, N) - P;
+   printf("Simple interest is Rs %6.2f\n", Simple);
+   printf("Compound interest is Rs %6.2f\n", Compound);
+   getch(); 
+ 
+}
